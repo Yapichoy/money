@@ -1,16 +1,27 @@
 import { NavLink } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars, faPencilAlt, faSortDown } from '@fortawesome/free-solid-svg-icons';
 import './Header.scss';
+
 const Header = () => {
 
     return <div className="header">
-        <div className="header__logo">
-          <NavLink to="/"><img src={process.env.PUBLIC_URL + '/logo.svg'} alt="" /></NavLink>
+      <div className="header__row">
+        <div className="header__menu">
+          <FontAwesomeIcon icon={faBars} size="2x" />
         </div>
-
-        <div className="search">
-          <input type="text" id="search" placeholder="Поиск" className="search__input" />
-          <label htmlFor="search"><img src={process.env.PUBLIC_URL + '/search-icon.png'} className="search__icon" alt="" /></label>
+        <div className="header__bills">
+          <div className="header__bills__label">
+            Все счета  <FontAwesomeIcon icon={faSortDown} size="sm" />
+          </div>
+          <div className="header__bills__balance">
+            0 $
+          </div>
         </div>
+        <div className="header__redact">
+          <FontAwesomeIcon icon={faPencilAlt} size="lg" />
+        </div>
+      </div>
     </div>
   
   }

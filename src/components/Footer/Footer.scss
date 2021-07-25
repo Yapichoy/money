@@ -2,7 +2,6 @@
 .footer{
     width: 100%;
     height: 80px;
-    background: $footerBg;
     padding-left: 40px;
     display: flex;
     align-items: center;
@@ -12,7 +11,7 @@
     align-items: center;
     position: absolute;
     bottom: 0;
-
+    border-top: 2px solid $footerBg;
     p {
         margin-bottom: 0;
     }
