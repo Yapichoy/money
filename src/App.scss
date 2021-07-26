@@ -6,6 +6,11 @@
   padding-bottom: 150px;
   .container {
     padding: 80px 20px 50px;
+    section {
+      width: 100%;
+      max-width: 660px;
+      margin: 0 auto;
+    }
   }
 }
 

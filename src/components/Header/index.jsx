@@ -1,4 +1,3 @@
-import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faPencilAlt, faSortDown } from '@fortawesome/free-solid-svg-icons';
 import './Header.scss';
@@ -11,12 +10,12 @@ const Header = () => {
           <FontAwesomeIcon icon={faBars} size="2x" />
         </div>
         <div className="header__bills">
-          <div className="header__bills__label">
+          {/*<div className="header__bills__label">
             Все счета  <FontAwesomeIcon icon={faSortDown} size="sm" />
           </div>
           <div className="header__bills__balance">
             0 $
-          </div>
+          </div>*/}
         </div>
         <div className="header__redact">
           <FontAwesomeIcon icon={faPencilAlt} size="lg" />

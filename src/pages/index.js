@@ -1,2 +1,3 @@
 export {default as MainPage} from './MainPage';
-export {default as NewsPage} from './NewsPage';
+export {default as BillsPage} from './BillsPage';
+export {default as CategoriesPage} from './CategoriesPage';

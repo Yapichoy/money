@@ -1,7 +1,7 @@
 
 import './App.scss';
 import {Route} from "react-router-dom";
-import { MainPage, NewsPage } from './pages';
+import { BillsPage, MainPage, CategoriesPage } from './pages';
 import {Header, Footer} from "./components";
 
 function App() {
@@ -11,7 +11,8 @@ function App() {
         <Header/>
         <div className="container">
           <Route exact path={['/']} component={MainPage}/>
-          <Route exact path={['/post/:id']} component={NewsPage}/>
+          <Route exact path={['/bills']} component={BillsPage}/>
+          <Route exact path={['/categories']} component={CategoriesPage}/>
         </div>
         <Footer/>
       </div>

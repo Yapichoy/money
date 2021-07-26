@@ -1,0 +1,73 @@
+@import '../../styles/vars';
+.bills {
+    &__section {
+        padding: 10px 0;
+        border-bottom: 1px solid $borderColor;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.1em;
+        margin-bottom: 15px;
+    }
+    &__label {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $grayTextColor;
+    }
+    &__sum {
+        color: $grayTextColor;
+    }
+    &__item{
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 10px;
+        cursor: pointer;
+        &__logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 35px;
+            height: 35px;
+            border-radius: 3px;
+            color: #fff;
+            margin-right: 10px;
+        }
+        &__body {
+            width: 93%;
+            padding-bottom: 8px;
+            margin-top: -4px;
+            border-bottom: 1px solid $borderColor;
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__addItem{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        cursor: pointer;
+        &__logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 35px;
+            height: 35px;
+            border-radius: 3px;
+            color: $borderColor;
+            margin-right: 10px;
+            border: 1px dashed $borderColor;
+            font-size: 1.3em;
+        }
+        &__body {
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
